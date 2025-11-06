@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎲 Dice Game - Exploit Blockchain Randomness</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 800px;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .info-box {
+            background: #f5f5f5;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+            border-radius: 8px;
+        }
+        .info-box h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .info-box p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        .links {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        a {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        .secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+        .secondary:hover {
+            background: #e0e0e0;
+        }
+        .code {
+            background: #2d2d2d;
+            color: #00ff00;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            text-align: left;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #ccc, transparent);
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎲 Dice Game Challenge</h1>
+        <p class="subtitle">Exploit Blockchain Randomness - SpeedRunEthereum Solution</p>
+        
+        <div class="info-box">
+            <h3>📊 Deployment Status</h3>
+            <p>✅ Smart Contracts: Deployed to Sepolia Testnet<br>
+            ✅ Contracts Verified on Etherscan<br>
+            ✅ Frontend: Live on Vercel</p>
+        </div>
+
+        <div class="info-box">
+            <h3>🎯 Smart Contracts</h3>
+            <p><strong>DiceGame Contract:</strong> 0x5d5293F9F43f90c66E1DD677b0ce11e73a1204ff<br>
+            <strong>RiggedRoll Contract:</strong> 0x34308f30b3fECAb955a2c6E32e7Ee0EFD873C98F</p>
+        </div>
+
+        <div class="info-box">
+            <h3>🔐 Vulnerability Exploited</h3>
+            <p>The DiceGame contract uses <code>blockhash()</code> for randomness, which is predictable on public blockchains. Our RiggedRoll contract predicts the outcome and only rolls when guaranteed to win!</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <h3 style="margin-bottom: 20px;">Key Files</h3>
+        <div class="code">// Smart Contract Structure
+├── contracts/
+│   ├── DiceGame.sol      (Vulnerable target)
+│   └── RiggedRoll.sol    (Exploit contract)
+├── deploy/
+│   ├── 00_deploy_diceGame.ts
+│   └── 01_deploy_riggedRoll.ts
+└── app/
+    ├── dice/page.tsx     (Frontend UI)
+    └── layout.tsx
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="links">
+            <a href="https://github.com/dharmanan/speedRun-Ethereum-Quest4" target="_blank">📦 GitHub Repository</a>
+            <a href="https://sepolia.etherscan.io/address/0x34308f30b3fECAb955a2c6E32e7Ee0EFD873C98F" target="_blank">🔍 RiggedRoll on Etherscan</a>
+            <a href="https://speedrunethereum.com/" target="_blank">🏃 SpeedRunEthereum</a>
+        </div>
+
+        <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid #eee; color: #999; font-size: 14px;">
+            <p>Built with Hardhat, NextJS, and Scaffold-ETH 2</p>
+            <p>Deployed to Sepolia Testnet - Educational Purpose Only</p>
+        </div>
+    </div>
+</body>
+</html>
