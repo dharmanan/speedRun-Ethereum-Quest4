@@ -79,7 +79,7 @@ function riggedRoll() public payable {
 
 ### Frontend
 
-**Live Application:** https://dice-game-rigged-2025-6lo8jtrkk-kohens-projects.vercel.app
+**Live Application:** https://dice-game-rigged-2025-ifwtclnop-kohens-projects.vercel.app/
 
 The frontend allows users to:
 - Connect their wallet (MetaMask, etc.)
