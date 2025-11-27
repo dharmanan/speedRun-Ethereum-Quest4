@@ -29,10 +29,9 @@ contract RiggedRoll is Ownable {
 
         console.log("\t", "Rigged Roll prediction:", roll);
 
-        // Only call rollTheDice if we will win (roll <= 5)
-        if (roll <= 5) {
-            diceGame.rollTheDice{ value: 0.002 ether }();
-        }
+        // Only call rollTheDice if we will win (roll < 5)
+        require(roll < 5, "Expected roll to be a winner");
+        diceGame.rollTheDice{ value: 0.002 ether }();
     }
 
     // Withdraw function to transfer Ether to a specified address
